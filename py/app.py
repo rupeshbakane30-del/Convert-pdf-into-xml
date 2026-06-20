@@ -599,6 +599,5 @@ def not_found(e):
 def server_error(e):
     return jsonify({'status': 'ERROR', 'message': 'Internal server error'}), 500
 
-
-if __name__ == '__main__':
-    app.run(debug=os.getenv('FLASK_DEBUG', 'True') == 'True', port=5000)
+if __name__ == "__main__":
+    app.run(debug=True)
